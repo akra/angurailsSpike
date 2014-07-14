@@ -1,0 +1,10 @@
+<form name="loginForm" novalidate>
+    <h3>Login</h3>
+    <input ng-model="user.email" type="text" placeholder="Email" required>
+    <input ng-model="user.password" type="password" placeholder="Password" required>
+
+    <button ng-disabled="!loginForm.$valid" ng-click="login()" >Log in</button>
+    <button ng-disabled="!loginForm.$valid" ng-click="signup()">Sign up</button>
+</form>
+
+<p ng-show="user.errors" ng-bind="user.errors | json"></p>

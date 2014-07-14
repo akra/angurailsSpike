@@ -1,0 +1,40 @@
+@import 'bourbon/dist/bourbon';
+@import 'variables';
+@import 'grid-settings';
+@import 'neat/app/assets/stylesheets/neat';
+
+/* Import bitters components */
+@import 'bitters/app/assets/stylesheets/extends/button';
+@import 'bitters/app/assets/stylesheets/forms';
+
+/* Refills components */
+@import 'refills/source/stylesheets/refills/hero';
+@import 'refills/source/stylesheets/refills/hover-tile-animation';
+@import 'refills/source/stylesheets/refills/tables';
+
+
+@import 'buttons';
+@import 'navbar';
+@import 'main-container';
+
+body {
+  font-family: $base-font-family;
+  color: $deep-teal;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.main{
+  .table-borders {
+    width: 100%;
+  }
+  .hover-row{
+    .hover-tile-outer {
+      @include span-columns(6);
+    }
+  }
+}
+
+
