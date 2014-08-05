@@ -10,12 +10,13 @@
  */
 angular
   .module('angurailsApp', [
-    // 'ngAnimate',
+    'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
-    //'ngSanitize',
-    // 'ngTouch'
+    'ngSanitize',
+    'ngTouch',
+    'growlNotifications'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -61,8 +62,12 @@ angular
     ];
     $httpProvider.responseInterceptors.push(interceptor);
   })
-  .run(function ($rootScope, $http, $location, tokenHandler) {
+  .config(['growlNotificationsProvider', function(growlNotificationsProvider){
+    growlNotificationsProvider.ttl(10000);
+  }])
+  .run(function ($rootScope, $http, $location, growlNotifications) {
     $rootScope.$on('event:unauthorized', function (evt) {
+      growlNotifications.add('<b>Brak autoryzacji</b> zaloguj sie aby uzyskać dostęp do tego zasobu', 'error');
       $location.path('/login');
     });
   });

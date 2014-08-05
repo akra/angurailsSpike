@@ -1,0 +1,31 @@
+div[growl-notifications] {
+  @include position(fixed, 0px 0px 0px null);
+  width: 400px;
+  z-index: 999999;
+  ul.list-unstyled {
+    list-style: none;
+    margin: 0;
+    li {
+      display: block;
+      .alert {
+        @include pad(25px 15px);
+        margin: 5px 10px 0 0;
+        border-radius: 3px;
+        box-shadow: 0 0 12px #999999;
+        background-position: 15px center;
+        background-repeat: no-repeat;
+      }
+      .alert-info {
+        background-color: $notice-color;
+      }
+      .alert-success {
+        background-color: $success-color;
+        color: green;
+      }
+      .alert-error {
+        background-color: $error-color;
+        color: #8A0B0B;
+      }
+    }
+  }
+}

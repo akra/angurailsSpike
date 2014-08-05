@@ -24,7 +24,7 @@
     <!-- Add your site or application content here -->
 
     <header class="navbar" ng-include="'views/layout/navbar.html'"></header>
-
+    <div growl-notifications></div>
     <div class="main-container" ng-view></div>
 
     <!-- build:js(.) scripts/oldieshim.js -->
@@ -44,6 +44,7 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-growl-notifications/dist/growl-notifications.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

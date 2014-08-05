@@ -8,11 +8,10 @@
  * Controller of the angurailsApp
  */
 angular.module('angurailsApp')
-  .controller('MainCtrl', function ($scope, $http, Article, tokenHandler) {
+  .controller('MainCtrl', function ($scope, $http, Article) {
     var vt = this;
 
     Article.getLatestFeed().then(function (data) {
       vt.articles = data;
     });
-
   });
