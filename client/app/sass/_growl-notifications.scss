@@ -1,5 +1,5 @@
 div[growl-notifications] {
-  @include position(fixed, 0px 0px 0px null);
+  @include position(fixed, 15px 0px null null);
   width: 400px;
   z-index: 999999;
   ul.list-unstyled {

@@ -28,7 +28,8 @@
     "grunt-connect-proxy": "~0.1.10",
     "grunt-contrib-sass": "~0.7.3",
     "grunt-ngmin": "0.0.3",
-    "grunt-ng-annotate": "~0.3.0"
+    "grunt-ng-annotate": "~0.3.0",
+    "grunt-angular-gettext": "~0.2.14"
   },
   "engines": {
     "node": ">=0.10.0"

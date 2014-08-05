@@ -6,7 +6,7 @@
   .wraper {
     @include outer-container;
     @include clearfix;
-    ul {
+    ul.base-menu {
       margin: 0;
       padding: 0;
       li {
@@ -17,6 +17,15 @@
         background-color: white;
         text-align: center;
       }
+    }
+    ul.main-menu {
+      @extend .base-menu;
+      @include span-columns(10);
+    }
+    ul.language-menu {
+      @extend .base-menu;
+      text-align: right;
+      @include span-columns(2);
     }
   }
 }

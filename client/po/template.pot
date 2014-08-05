@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/views/layout/navbar.html
+msgid "Home"
+msgstr ""
+
+#: app/views/layout/navbar.html
+msgid "Login"
+msgstr ""
+
+#: app/views/layout/navbar.html
+msgid "Secured"
+msgstr ""
+
+#: app/views/main.html
+msgid "Teraz aplikacja dziala na jezyku DEVELOPER"
+msgstr ""
+
+#: app/views/main.html
+msgid "Wspaniala nasza aplikacja"
+msgstr ""

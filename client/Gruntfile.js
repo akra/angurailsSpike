@@ -274,12 +274,11 @@ module.exports = function (grunt) {
 
     ngAnnotate: {
       options: {
-            // Task-specific options go here.
+        // Task-specific options go here.
       },
       dist: {
         files: {
           '<%= yeoman.dist %>/scripts/scripts.js': ['<%= yeoman.dist %>/scripts/scripts.js'],
-          '<%= yeoman.dist %>/scripts/vendor.js': ['<%= yeoman.dist %>/scripts/vendor.js'],
           '<%= yeoman.dist %>/scripts/oldieshim.js': ['<%= yeoman.dist %>/scripts/oldieshim.js'],
         }
       },
@@ -362,6 +361,22 @@ module.exports = function (grunt) {
           ]
         }
       }
+    },
+
+    nggettext_extract: {
+      pot: {
+        files: {
+          'po/template.pot': ['<%= yeoman.app %>/views/{,*/}*.html']
+        }
+      },
+    },
+
+    nggettext_compile: {
+      all: {
+        files: {
+          '<%= yeoman.app %>/scripts/translations.js': ['po/*.po']
+        }
+      },
     }
 
   });
@@ -421,4 +436,11 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('gettext', [
+    'nggettext_extract',
+    'nggettext_compile'
+  ]);
+
 };
+
