@@ -1,0 +1,25 @@
+<section id="users">
+<h2>Przyklad wykorzystania restangulara</h2>
+
+  <div class="left-side">
+    <table class="table-borders">
+      <thead>
+        <tr>
+          <th>L.P</th>
+          <th>Email</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="(key, user) in users">
+          <td ng-bind="key + 1"></td>
+          <td ng-bind="user.email"></td>
+          <td><button ui-sref="users.details({id: user.id})">Pokaż</button> </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div ui-view class="right-side"></div>
+
+</section>

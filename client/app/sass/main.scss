@@ -11,13 +11,23 @@
 @import 'refills/source/stylesheets/refills/hero';
 @import 'refills/source/stylesheets/refills/hover-tile-animation';
 @import 'refills/source/stylesheets/refills/tables';
+@import 'refills/source/stylesheets/refills/cards';
 
 
-@import 'buttons';
-@import 'navbar';
-@import 'main-container';
-@import 'growl-notifications';
-@import 'tables';
+// Grid setting, only neat mixins
+@import 'grids/navbar';
+@import 'grids/main_container';
+@import 'grids/users';
+
+// Custom elements like navbar or card
+@import 'elements/card';
+@import 'elements/navbar';
+@import 'elements/main_container';
+@import 'elements/growl_notifications';
+
+// Simple HTML tag styles
+@import 'tags/buttons';
+@import 'tags/tables';
 
 body {
   font-family: $base-font-family;

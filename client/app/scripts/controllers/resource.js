@@ -9,7 +9,5 @@
  */
 angular.module('angurailsApp')
   .controller('ResourceCtrl', function ($scope, Restangular) {
-
     $scope.users = Restangular.all('users').getList().$object;
-
   });

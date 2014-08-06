@@ -1,0 +1,13 @@
+.navbar {
+  @include position(fixed, 0px 0 0 0px);
+  .wraper {
+    @include outer-container;
+    @include clearfix;
+    ul.main-menu {
+      @include span-columns(10);
+    }
+    ul.language-menu {
+      @include span-columns(2);
+    }
+  }
+}

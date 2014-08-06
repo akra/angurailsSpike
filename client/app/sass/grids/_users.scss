@@ -1,0 +1,9 @@
+section#users {
+  .left-side {
+    @include span-columns(5);
+  }
+  .right-side {
+    @include span-columns(7);
+  }
+
+}

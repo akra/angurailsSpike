@@ -1,11 +1,8 @@
 .navbar {
-  @include position(fixed, 0px 0 0 0px);
   background-color: $blondi-blue;
   height: 50px;
   border-bottom: 1px solid #ccc;
   .wraper {
-    @include outer-container;
-    @include clearfix;
     ul.base-menu {
       margin: 0;
       padding: 0;
@@ -20,12 +17,10 @@
     }
     ul.main-menu {
       @extend .base-menu;
-      @include span-columns(10);
     }
     ul.language-menu {
       @extend .base-menu;
       text-align: right;
-      @include span-columns(2);
     }
   }
 }

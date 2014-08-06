@@ -23,10 +23,15 @@
        templateUrl: '/views/login.html',
        controller: 'LoginCtrl'
      })
-     .state('resource',{
-      url: '/resource',
-      templateUrl: '/views/resource.html',
-      controller: 'ResourceCtrl'
+     .state('users', {
+       url: '/users',
+       templateUrl: '/views/users.html',
+       controller: 'ResourceCtrl'
+     })
+     .state('users.details', {
+       url: '/:id',
+       templateUrl: '/views/users.details.html',
+       controller: 'ResourceDetailsCtrl'
      })
 
  })
