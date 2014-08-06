@@ -9,6 +9,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -25,7 +26,7 @@
 
     <header class="navbar" ng-include="'views/layout/navbar.html'"></header>
     <div growl-notifications></div>
-    <div class="main-container" ui-view></div>
+    <div class="main-container animate" ui-view></div>
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>

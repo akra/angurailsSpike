@@ -1,0 +1,7 @@
+section#main{
+  .hover-row{
+    .hover-tile-outer {
+      @include span-columns(6);
+    }
+  }
+}

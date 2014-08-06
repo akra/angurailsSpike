@@ -1,0 +1,8 @@
+section#users {
+  [ui-view].ng-enter {
+    animation: pulse 0.3s;
+  }
+}
+
+
+

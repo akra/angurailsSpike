@@ -1,0 +1,7 @@
+[ng-repeat].ng-enter {
+  animation: flipInX 1s;
+}
+
+[ng-repeat].ng-leave {
+  animation: zoomOut 0.3s;
+}

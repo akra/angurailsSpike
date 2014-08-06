@@ -18,6 +18,12 @@
 @import 'grids/navbar';
 @import 'grids/main_container';
 @import 'grids/users';
+@import 'grids/main';
+
+// Simple HTML tag styles
+@import 'tags/buttons';
+@import 'tags/tables';
+@import 'tags/a';
 
 // Custom elements like navbar or card
 @import 'elements/card';
@@ -25,26 +31,22 @@
 @import 'elements/main_container';
 @import 'elements/growl_notifications';
 
-// Simple HTML tag styles
-@import 'tags/buttons';
-@import 'tags/tables';
+
+// Special page styles, only for one page
+
+// Animations
+@import 'animations/uiview';
+@import 'animations/users';
+@import 'animations/ngrepeat';
+
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow: scroll;
+}
 
 body {
   font-family: $base-font-family;
   color: $deep-teal;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-section.main{
-  .hover-row{
-    .hover-tile-outer {
-      @include span-columns(6);
-    }
-  }
 }
 
 
