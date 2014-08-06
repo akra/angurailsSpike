@@ -18,7 +18,7 @@ angular.module('angurailsApp')
         if(user){
           d.resolve(user);
         } else {
-          $http.get('/api/users/show')
+          $http.get('/api/users/current')
             .success(function (data) {
               d.resolve(data);
               user = data;

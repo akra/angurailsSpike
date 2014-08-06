@@ -6,6 +6,7 @@ Rails.application.routes.draw do
         registrations: "users/registrations",
         sessions: "users/sessions"
       }
+    get '/users/current', to: 'users#current'
     resources :users
   end
 end
