@@ -17,6 +17,7 @@
 @import 'navbar';
 @import 'main-container';
 @import 'growl-notifications';
+@import 'tables';
 
 body {
   font-family: $base-font-family;
@@ -29,9 +30,6 @@ a {
 }
 
 section.main{
-  .table-borders {
-    width: 100%;
-  }
   .hover-row{
     .hover-tile-outer {
       @include span-columns(6);

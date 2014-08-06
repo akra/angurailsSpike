@@ -12,10 +12,10 @@ angular
   .module('angurailsApp', [
     'ngAnimate',
     'ngCookies',
-    'ngResource',
     'ui.router',
     'ngSanitize',
     'ngTouch',
     'growlNotifications',
-    'gettext'
+    'gettext',
+    'restangular'
   ]);

@@ -23,10 +23,6 @@
     $httpProvider.responseInterceptors.push(interceptor);
   })
 
-  .config(['growlNotificationsProvider', function(growlNotificationsProvider){
-    growlNotificationsProvider.ttl(10000);
-  }])
-
   .run(function ($rootScope, $http, $location, growlNotifications) {
     $rootScope.$on('event:unauthorized', function (evt) {
       growlNotifications.add('<b>Brak autoryzacji</b> zaloguj sie aby uzyskać dostęp do tego zasobu', 'error');
