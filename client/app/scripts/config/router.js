@@ -1,13 +1,15 @@
  'use strict';
  angular.module('angurailsApp')
 
- .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
+ .config(function($stateProvider) {
+    $stateProvider
+      .state('home',{
+        url: '/',
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl as main',
+        controller: 'MainCtrl as main'
       })
-      .when('/about', {
+      .state('secured',{
+        url: '/secured',
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         resolve: {
@@ -16,11 +18,14 @@
           }
         }
       })
-      .when('/login', {
-        templateUrl: 'views/login.html',
+      .state('login',{
+        url: '/login',
+        templateUrl: '/views/login.html',
         controller: 'LoginCtrl'
       })
-      .otherwise({
-        redirectTo: '/'
-      });
-  })
+
+ })
+
+ .config(function($urlRouterProvider) {
+   $urlRouterProvider.otherwise('/');
+ })
