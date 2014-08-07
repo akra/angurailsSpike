@@ -33,6 +33,11 @@
        templateUrl: '/views/users.details.html',
        controller: 'ResourceDetailsCtrl'
      })
+     .state('wysiwyg', {
+       url: '/wysiwyg',
+       templateUrl: 'views/wysiwyg.html',
+       controller: 'WysiwygCtrl'
+     })
 
  })
 

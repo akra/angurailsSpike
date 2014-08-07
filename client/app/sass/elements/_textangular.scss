@@ -1,0 +1,16 @@
+[text-angular] {
+  .ta-editor {
+    margin-top: 10px;
+    border: 1px solid $base-border-color;
+  }
+  .btn-group {
+    @include inline-block;
+    button {
+      font-size: $base-font-size * 0.7;
+      background-color: $medium-gray;
+    }
+  }
+  .yellow {
+    color: yellow;
+  }
+}

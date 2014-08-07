@@ -17,5 +17,6 @@ angular
     'ngTouch',
     'growlNotifications',
     'gettext',
-    'restangular'
+    'restangular',
+    'textAngular'
   ]);
