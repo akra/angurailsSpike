@@ -8,11 +8,15 @@
       padding: 0;
       li {
         min-width: 100px;
-        height: 50px;
+        height: 49px;
         @include pad(10px);
         display: inline-block;
-        background-color: white;
+        background-color: #fff;
         text-align: center;
+        &.active {
+          height: 50px;
+          font-weight: bold;
+        }
       }
     }
     ul.main-menu {

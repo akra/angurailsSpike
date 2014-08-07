@@ -1,10 +1,18 @@
 <nav class="wraper" ng-controller="NavbarCtrl as navbar">
 
   <ul class="main-menu">
-    <li><a ui-sref="home" translate>Home</a></li>
-    <li><a ui-sref="secured" translate>Secured</a></li>
-    <li><a ui-sref="login" translate>Login</a></li>
-    <li><a ui-sref="users" translate>Users</a></li>
+    <li ui-sref-active="active">
+      <a ui-sref="home" translate>Home</a>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="secured" translate>Secured</a>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="login" translate>Login</a>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="users" translate>Users</a>
+    </li>
 
   </ul>
 
